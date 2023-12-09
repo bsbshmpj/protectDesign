@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 1200px;
+    height: 120px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    z-index: 10;
+}
+
+.headerBtn:hover {
+    cursor: pointer;
+}
+
+/* 하트버튼만 더 옮기기 */
+.heart {
+    margin-right: 3px;
+}
+
+.headerBtnWrap {
+    display: flex;
+    align-items: center;
+}
+
+.menuBtnWrap {
+    display: flex;
+    margin-left: 20px;
+    position: absolute;
+    top: 35px;
+    left: 130px;
+}
+
+.menuChangeWrap {
+    padding: 0 10px;
+}
+
+.menuTextWrap {
+    background-color: rgb(225, 225, 225);
+    padding: 0 10px;
+    overflow: hidden;
+    height: 0px;
+    width: 150px;
+    border-radius: 0 0 13px 13px;
+}
+
+.menuBtn {
+    font-weight: 800;
+    font-size: 24px;
+    width: 130px;
+
+    text-align: center;
+    padding: 5px;
+}
+
+.togetherBtn {
+    color: rgb(141, 141, 141);
+}
+
+.protectBtn {
+    color: rgb(228, 114, 133);
+}
+
+.raiseBtn {
+    color: rgb(245, 171, 60);
+}
+
+/* 바뀌는 메뉴(?) */
+.menuChangeWrap {
+    background-color: rgb(242, 242, 242);
+    border-radius: 13px;
+}
+
+.menuChangeWrap > .togetherBtn {
+    color: #39c35e;
+}
+
+.menuChangeWrap > .protectBtn {
+    display: none;
+}
+
+.menuChangeWrap > .raiseBtn {
+    display: none;
+}
+
+.rightHeaderBtn {
+    margin-left: 8px;
+}
+
+/* 로그아웃 버튼은 나중에... */
+.logoutBtn {
+    display: none;
+}
+
+.menuUpBtn {
+    display: none;
+}
+
+.menuArrow {
+    margin: 15px 5px 5px 15px;
+}

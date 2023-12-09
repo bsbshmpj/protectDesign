@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------ */
+
+header {
+    height: 120px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #cff4fc;
+}
+
+/* ------------------------------------------------------------ */
+
+#protect-wrap {
+    margin: 30px auto 0;
+    width: 1200px;
+
+    /* -----지우기----- */
+    margin-bottom: 50px;
+}
+
+#banner-section {
+    width: 400px;
+    height: 55px;
+    display: flex;
+    border: 1px solid #333;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.type-outline {
+    width: 33.34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #333;
+}
+.type-outline:last-of-type {
+    border-right: none;
+}
+.type {
+    width: 115px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.type:hover {
+    background-color: #c0eecc;
+
+    /* -----지우기----- */
+    /* border: none; */
+}
+
+/* ------------------------------------------------------------ */
+
+#list-section {
+    border: 1px solid #333;
+    border-radius: 0 5px 5px 5px;
+}
+#list-wrap {
+    display: flex;
+    flex-direction: column; /* Change to column to display items in a list */
+    align-items: center; /* Optional: Center the items horizontally */
+}
+.list-content {
+    width: 100%; /* Optional: Adjust the width of the list items */
+    margin-bottom: 20px; /* Optional: Add margin between list items */
+    border: 1px solid #ccc; /* Optional: Add border for each list item */
+    padding: 10px; /* Optional: Add padding for each list item */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.list-content:hover{
+    border: 1px solid #333;
+    background-color: #ececec;
+    /* background-color: #f7f7f7; */
+}
+
+svg {
+    width: 30px;
+}
+
+/* .content-title{
+    font-weight: 500;
+    cursor: pointer;
+}
+.content-period{
+    font-size: 14px;
+} */
+
+/* ------------------------------------------------------------ */
+
+#pagination-wrap {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+
+    /* -----지우기----- */
+    /* border: 1px solid red; */
+}
+/* #pagination-wrap > div {
+    display: inline;
+} */
+#pagination-content {
+    display: flex;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#pagination-content > li {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+    border-right: 1px solid #aaa;
+    transition: 0.2s all;
+}
+#pagination-content > li:hover {
+    background-color: #ececec;
+}
+#pagination-content > li:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+#pagination-content > li:last-of-type {
+    border-right: none;
+    border-radius: 0 5px 5px 0;
+}
+#pagination-content > li > a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
